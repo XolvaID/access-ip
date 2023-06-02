@@ -1,10 +1,7 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
 
-colornow=$(cat /etc/alexxa/theme/color.conf)
 NC="\e[0m"
-COLOR1="$(cat /etc/alexxa/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-COLBG1="$(cat /etc/alexxa/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"
 
 APIGIT=$(cat /etc/alexxa/github/api)
 EMAILGIT=$(cat /etc/alexxa/github/email)

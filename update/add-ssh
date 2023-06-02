@@ -9,7 +9,6 @@ echo -e "$COLOR1 ${NC} ${COLBG1}               • SSH PANEL MENU •           
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 read -p "   Username : " Login
-OWNER="WEBSSH"
 CEKFILE=/etc/xray/ssh.txt
 if [ -f "$CEKFILE" ]; then
 file001="OK"

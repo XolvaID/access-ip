@@ -10,14 +10,13 @@ NET=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 source /etc/os-release
 ver=$VERSION_ID
 
-#detail nama perusahaan
 country=ID
-state=INDONESIA
-locality=JAWATENGAH
-organization=Blogger
-organizationalunit=Blogger
+state=Indonesia
+locality=JawaBarat
+organization=XolPanel
+organizationalunit=XolPanel
 commonname=none
-email=admin@sedang.my.id
+email=xolvadev@gmail.com
 
 # simple password minimal
 curl -sS https://raw.githubusercontent.com/XolvaID/access-ip/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
